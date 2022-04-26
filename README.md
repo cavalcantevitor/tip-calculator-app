@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX/hub/tip-calculator-app-solution-HkOS2hBH9](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX/hub/tip-calculator-app-solution-HkOS2hBH9)
+- Solution URL: [https://www.frontendmentor.io/solutions/tip-calculator-app-solution-HkOS2hBH9](https://www.frontendmentor.io/solutions/tip-calculator-app-solution-HkOS2hBH9)
 - Live Site URL: [https://vitoralves2c.github.io/tip-calculator-app/](https://vitoralves2c.github.io/tip-calculator-app/)
 
 
