@@ -1,0 +1,273 @@
+/* ---------- CSS RESET BY PICALLI ---------- */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- CUSTOM PROPERTIES ---------- */
+
+:root {
+  /* TYPOGRAPHY */
+
+  --ff: "Space Mono", monospace;
+  --fs: 10px;
+  --fs-form: 1.5rem;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  /* COLOR */
+
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --dark-grayish-cyan-2: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --light-grayish-cyan-2: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* ---------- STYLING ---------- */
+
+body {
+  background-color: var(--light-grayish-cyan);
+  font-family: var(--ff);
+  font-size: var(--fs);
+}
+
+.header {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: var(--very-dark-cyan);
+  font-size: var(--fs-form);
+}
+
+.header--2 {
+  color: var(--dark-grayish-cyan);
+}
+
+.calculator {
+  background: white;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.left--side {
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.select--tip {
+  margin-bottom: 1rem;
+}
+
+button,
+input {
+  font-size: var(--fs-form);
+  width: 100%;
+  border: none;
+  color: var(--very-dark-cyan);
+  font-weight: var(--fw-700);
+  background-color: var(--light-grayish-cyan-2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input {
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  padding-right: 1rem;
+  text-align: right;
+  background-image: url(images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-size: 0.8rem;
+  background-position: left 5% center;
+}
+
+input:last-child {
+  margin-bottom: 0;
+  background-image: url(images/icon-person.svg);
+}
+
+.tip {
+  border-radius: 6px;
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  transition: 0.2s;
+}
+
+.tip:last-child {
+  color: var(--very-dark-cyan);
+  font-weight: var(--fw-700);
+  background-color: var(--light-grayish-cyan-2);
+}
+
+.tip:hover,
+.reset--btn:hover {
+  background-color: var(--light-grayish-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.tip:focus,
+.reset--btn:focus {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.right--side {
+  background-color: var(--very-dark-cyan);
+  margin: auto;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.right--side .header--2 {
+  color: var(--white);
+}
+
+.subtitle {
+  color: var(--dark-grayish-cyan-2);
+  font-size: 0.75rem;
+  font-weight: var(--fw-700);
+  margin-bottom: 1rem;
+}
+
+.tip--amount,
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tip--amount {
+  margin-top: 0.75rem;
+}
+
+.value {
+  font-size: 2.5rem;
+  font-weight: var(--fw-700);
+  color: var(--strong-cyan);
+}
+
+.reset--btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: var(--very-dark-cyan);
+  background-color: var(--strong-cyan);
+  transition: 0.2s;
+}
+
+@media (min-width: 800px) {
+  body {
+    min-height: 100vh;
+  }
+
+  .calculator {
+    width: 800px;
+    display: flex;
+    gap: 2rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+  .left--side {
+    width: 100%;
+    margin: 0;
+  }
+
+  .right--side {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .reset--btn {
+    margin-top: 12.25rem;
+  }
+}
