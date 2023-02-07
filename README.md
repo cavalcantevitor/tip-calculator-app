@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/tip-calculator-app-solution-HkOS2hBH9](https://www.frontendmentor.io/solutions/tip-calculator-app-solution-HkOS2hBH9)
-- Live Site URL: [https://cavalcantevitor.github.io/tip-calculator-app/](https://vitoralves2c.github.io/tip-calculator-app/)
+- Live Site URL: [https://cavalcantevitor.github.io/tip-calculator-app/](https://cavalcantevitor.github.io/tip-calculator-app/)
 
 
 ## My process
