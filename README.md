@@ -58,6 +58,6 @@ Users should be able to:
 
 ## Author
 
-- Github - [vitoraves2c](https://github.com/vitoralves2c)
+- Github - [cavalcantevitor](https://github.com/cavalcantevitor)
 - Frontend Mentor - [@vitoralves2c](https://www.frontendmentor.io/profile/vitoralves2c)
 
